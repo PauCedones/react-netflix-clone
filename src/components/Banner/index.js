@@ -35,7 +35,6 @@ function Banner() {
         <h1>{movie?.title || movie?.name || movie?.original_name}</h1>
         <p className="banner-sinopsis">{truncate(movie?.overview, 150)}</p>
         <div className="banner-info">
-          <p>{movie.vote_average}</p>
           <p>{movie.popularity}</p>
           <p>{movie.release_date}</p>
         </div>

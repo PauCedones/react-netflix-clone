@@ -4,10 +4,16 @@ import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import Home from "./pages/Home";
+import Movies from "./pages/Movies";
+import TVShows from "./pages/TVShows";
+import Movie from "./pages/Movie";
 
 ReactDOM.render(
   <Router>
-    <Route eaxct path="/" component={Home} />
+    <Route exact path="/" component={Home} />
+    <Route exact path="/movies" component={Movies} />
+    <Route exact path="/tv" component={TVShows} />
+    <Route exact path="/movie/:movie_id" component={Movie} />
   </Router>,
   document.getElementById("root")
 );
